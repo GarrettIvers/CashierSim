@@ -10,7 +10,6 @@
 
 **Date:** April 11, 2024
 
-
 ## Description
 This simulation models the behavior of a grocery store with both cashier and self-checkout options. The purpose is to analyze customer flow, checkout queue lengths, and wait times under various store configurations and customer behaviors.
 
@@ -34,21 +33,41 @@ This simulation models the behavior of a grocery store with both cashier and sel
 - Service times at self-checkout stations are normally distributed with a mean of `self_checkout_service_time_mean` and a standard deviation of `self_checkout_service_time_std`.
 
 ## Simulation Results
-![Average Shopping Time and Service Time](average_shopping_service_time.png)
-*Figure 1: Average Shopping Time and Service Time*
 
-The graph above shows the average shopping time and service time over the course of the simulation. The rolling mean with a window of 10 is used to smooth out fluctuations and show the overall trend.
+![Simulation Results Table](simulation_results_table.png)
+*Figure 1: Simulation Results Table*
 
-![Checkout Queue Length](checkout_queue_length.png)
-*Figure 2: Checkout Queue Length*
+This table displays the raw data from the simulation, including timestamps, checkout types, service times, and queue times.
 
-This graph displays the length of the cashier queue and self-checkout queue at the end of the simulation. It provides insights into which queue experiences more congestion.
+![Average Wait Time Comparison](average_wait_time_comparison.png)
+*Figure 2: Average Wait Time Comparison*
 
-![Average Checkout Queue Wait Time](average_checkout_wait_time.png)
-*Figure 3: Average Checkout Queue Wait Time*
+This graph compares the average wait time for customers using cashier checkout versus self-checkout. It helps identify which checkout type results in longer wait times.
 
-The graph above shows the average wait time for customers in the cashier queue and self-checkout queue. It helps identify which queue has longer wait times.
+![Queue Length Over Time](queue_length_over_time.png)
+*Figure 3: Queue Length Over Time*
 
+This graph shows the length of the queue over time, providing insights into how the queue length changes throughout the simulation.
+
+![Checkout Efficiency](checkout_efficiency.png)
+*Figure 4: Checkout Efficiency*
+
+The graph above compares the efficiency of cashier checkout versus self-checkout, measured as customers processed per hour.
+
+![Customer Checkout Preference](customer_checkout_preference.png)
+*Figure 5: Customer Checkout Preference*
+
+This pie chart shows the percentage of customers who prefer cashier checkout versus self-checkout, providing insights into customer preferences.
+
+![Resource Utilization](resource_utilization.png)
+*Figure 6: Resource Utilization*
+
+This graph compares the utilization of cashier checkout versus self-checkout, providing insights into which resources are being used more efficiently.
+
+![Sensitivity Analysis](sensitivity_analysis.png)
+*Figure 7: Sensitivity Analysis*
+
+The graph above shows the average wait time as a function of customer arrival rate, providing insights into how changes in arrival rate affect wait times.
 ## Analysis
 Based on the simulation results, we can observe the following:
 - The average shopping time remains relatively stable throughout the simulation, while the average service time shows some variability.
